@@ -1,0 +1,42 @@
+img {
+    width: 50px;
+}
+
+/* Navigation Bar */
+header, footer {
+    background-color:lightsteelblue;
+    color: white;
+    padding: 10px;
+}
+
+nav {
+    background-color:lightsteelblue;
+    color: white;
+    padding: 10px;
+}
+
+span > a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+span > a:hover {
+    background-color: lime;
+    color: black;
+}
+
+/* Main */
+main > div {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-gap: 1px;
+}
+
+article {
+    border: 1px solid black;
+    margin: 20px;
+}
