@@ -7,9 +7,11 @@ nav > span > a {/*Icons in the nav bar*/
     color: white;
     /*need to remove line under icon*/
     /*need to add spacing and center the icons*/
+
 }
 #profile-button {
     /*Needs to be on the right side of nav bar*/
+    /* text align right doesnt work*/
 }
 a:hover{
     color: red;/*highlights items that you hover(can change color)*/
@@ -31,5 +33,24 @@ article {
     /* more changes to buttons */
 }
 .section {
-    /*line that breaks between sections*/
+    /*line that breaks betwen sections*/
+}
+.column-personal {/* Left most column*/
+    text-align: center;/* can change */
+    /* Align Left */
+    max-width: 250px;/* can change */
+}
+
+.column-posts {/* middle column */
+    /* align middle */
+    text-align: center; /* can change */
+    max-width: 250px;/* can change */
+}
+
+.column-friends {/* right most column */
+    /* align right */
+}
+
+#gidholder {
+    columns: 3 auto;
 }
