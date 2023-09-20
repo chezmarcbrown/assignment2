@@ -1,4 +1,23 @@
+html, body, main {
+    background-color: #E8F1F2;
+}
+
 body {
-    background-color: #f0f0f0;
-    color: orange;
+    color: #006494;
+}
+
+main {
+    display:grid;
+    justify-content: center; /* Horizontally center the grid */
+    align-items: center; /* Vertically center the grid */
+    height: 100%;
+}
+
+#gridholder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+}
+
+.column {
+    padding: 10px;
 }
