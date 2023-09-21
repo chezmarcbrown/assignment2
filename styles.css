@@ -1,23 +1,51 @@
 html, body, main {
-    background-color: #E8F1F2;
+	background-color: #E8F1F2;
 }
 
 body {
-    color: #006494;
+	color: #006494;
 }
 
 main {
-    display:grid;
-    justify-content: center; /* Horizontally center the grid */
-    align-items: center; /* Vertically center the grid */
-    height: 100%;
+	display:grid;
+	justify-content: center; /* Horizontally center the grid */
+	align-items: center; /* Vertically center the grid */
+	height: 100%;
 }
 
 #gridholder {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
 }
 
 .column {
-    padding: 10px;
+	padding: 10px;
+}
+
+.friend-request, .profile, .post, .new-post, .highlights, .interests {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	margin: 5px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.post, .new-post {
+	margin-bottom: 10px;
+}
+
+textarea {
+	width: 98% !important;
+}
+
+.profile img {
+	width: 20%;
+}
+
+.avatar img {
+	width: 15%;
+	border-radius: 50%;;
+}
+
+.friend-request img {
+	width: 10%;
 }
