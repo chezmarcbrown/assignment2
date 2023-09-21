@@ -1,5 +1,6 @@
 img {
     width: 50px;
+    border-radius: 50%;
 }
 
 /* Navigation Bar */
@@ -24,6 +25,14 @@ span > a {
     font-size: 17px;
 }
 
+#profile-button {
+    float: right;
+}
+
+a > img {
+    width: 25px;
+}
+
 span > a:hover {
     background-color: lime;
     color: black;
@@ -33,10 +42,16 @@ span > a:hover {
 main > div {
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-gap: 1px;
 }
 
 article {
     border: 1px solid black;
     margin: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px;
+}
+
+/* Leftmost Column */
+.profile > section {
+    text-align: center;
 }
