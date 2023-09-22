@@ -36,29 +36,60 @@ article {
 }
 .highlights {/*Section needs to have a grey background*/
     background-color: darkgrey;
+    /*remove bullet points*/
 }
 .post-buttons > button{
     background-color: darkgrey;
     /* more changes to buttons */
 }
-.section {
-    /*line that breaks betwen sections*/
-}
-.column-personal {/* Left most column*/
-    /* Align Left */
-    
-}
-
-.column-posts {/* middle column */
-    /* align middle */
-   
-}
-
-.column-friends {/* right most column */
-    /* align right */
-    
-}
  #gridholder {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 4fr 2fr;
+    gap: 10px;
+ }
+ .friend-request {
+    text-align: center;
+ }
+ .accept-button {
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    padding: 5px 32px;
+    /*border around*/
+    /*padding from text to border*/
+ }
+ .reject-button {
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    padding: 5px 32px;
+    /*border around*/
+    /*padding from text to border*/
+ }
+ div {
+    padding: 5px;
+ }
+ article {
+    /* padding between articles needed */
+ }
+ .profile {
+    text-align: center;
+    /* fix bullets */
+    /* add lines */
+ }
+ .interests {
+    /* format this */
+ }
+ .column-friends {
+    
+ }
+ .highlights {
+
+ }
+ .column-personal {
+
+ }
+ textarea {
+    margin: 5px;
+    width: 300px;
  }
