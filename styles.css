@@ -1,0 +1,88 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #3B5998;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav span {
+    display: inline-block;
+}
+
+nav a {
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* 3-column grid */
+#gridholder {
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    gap: 20px;
+    padding-top: 60px; /* Adjust for fixed header */
+}
+
+/* Cards styling */
+.column article {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Profile styling */
+.profile h2 img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/* Posts styling */
+.posts .post .avatar img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+/* Friend requests */
+.friends .friend-request img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.friend-request-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer */
+footer {
+    background-color: #3B5998;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
