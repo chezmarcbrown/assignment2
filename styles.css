@@ -1,0 +1,74 @@
+#gridholder {
+    column-count: 3;
+}
+
+div.column > * {
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav, footer {
+    background-color: slategrey;
+}
+
+.fa {
+    color: white;
+    padding: 3px;
+    margin: 2px 4px;
+    text-decoration: none;
+}
+
+#profile-button {
+    float: right;
+    position: relative;
+    top: -12px;
+}
+
+article.highlights ul, article.interests ul {
+    list-style: none;
+}
+
+li > a {
+    text-decoration: none;
+}
+
+div.post-buttons>* {
+    background-color: darkgrey;
+    color: white;
+}
+
+img {
+    max-width: 50px;
+}
+
+#profile-button img {
+    border-radius: 50%;
+    scale: .45;
+}
+
+article.post section span {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+article.post span.avatar img {
+    border-radius: 50%;
+}
+
+article.friend-request *{
+    align-self: center;
+    width: 50%;
+}
+
+a.accept-button {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+}
+
+a.reject-button {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+}
