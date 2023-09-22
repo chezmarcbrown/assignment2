@@ -1,15 +1,24 @@
+main {
+    padding-top: 50px;
+}
 nav {
     background-color: grey;/*Choose background color*/
-    /*Make it where it moves while scrolling*/
-    max-height: 100px;
+    position: fixed;/*Make it where it moves while scrolling*/
+    top: 0;
+    width: 100%;
+    max-height: 40px;
 }
 nav > span > a {/*Icons in the nav bar*/
     color: white;
-    /*need to remove line under icon*/
-    /*need to add spacing and center the icons*/
-
+    display: block;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;/* remove line under icon*/
 }
 #profile-button {
+    padding: 0px;
+    display: block;
+    float: right;
     /*Needs to be on the right side of nav bar*/
     /* text align right doesnt work*/
 }
@@ -20,7 +29,7 @@ footer {
     background-color: grey;/*choose background color(same color as nav bar)*/
 }
 img {
-    width: 50px;
+    width: 40px;
 }
 article {
     border: 1px solid black;/*Need border around each article*/
@@ -36,21 +45,20 @@ article {
     /*line that breaks betwen sections*/
 }
 .column-personal {/* Left most column*/
-    text-align: center;/* can change */
     /* Align Left */
-    max-width: 250px;/* can change */
+    
 }
 
 .column-posts {/* middle column */
     /* align middle */
-    text-align: center; /* can change */
-    max-width: 250px;/* can change */
+   
 }
 
 .column-friends {/* right most column */
     /* align right */
+    
 }
-
-#gidholder {
-    columns: 3 auto;
-}
+ #gridholder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+ }
