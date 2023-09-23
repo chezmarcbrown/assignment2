@@ -2,11 +2,16 @@ main {
     padding-top: 50px;
 }
 nav {
-    background-color: grey;/*Choose background color*/
+    border: 1px;
+    background-color: rgb(68, 62, 62);/*Choose background color*/
     position: fixed;/*Make it where it moves while scrolling*/
+    margin-right: 10px;
     top: 0;
     width: 100%;
     max-height: 40px;
+    z-index: 1; /* No overlay on top of other text*/
+    font-size: 18px; /* nav icons size */
+    /*padding-left: 10px; /* more space in between icons */
 }
 nav > span > a {/*Icons in the nav bar*/
     color: white;
@@ -14,19 +19,30 @@ nav > span > a {/*Icons in the nav bar*/
     text-align: center;
     padding: 12px;
     text-decoration: none;/* remove line under icon*/
+    /*border-radius: 50%;*/
 }
-#profile-button {
+#profile-button { /*Needs to be on the right side of nav bar*/
     padding: 0px;
     display: block;
     float: right;
-    /*Needs to be on the right side of nav bar*/
-    /* text align right doesnt work*/
+    /*height: 30px;
+    width: 30px;*/
+    border-radius: 50%; /* this should make the profile-button round */
 }
 a:hover{
-    color: red;/*highlights items that you hover(can change color)*/
+    background-color: rgb(134, 130, 130);/*highlights items that you hover(can change color)*/
+}
+a:active{
+    background-color: #888d7e89;/*highlights nav icons once you click on them */
 }
 footer {
-    background-color: grey;/*choose background color(same color as nav bar)*/
+    background-color: rgb(68, 62, 62);/*choose background color(same color as nav bar)*/
+    color: white; /* white color for the text */
+    margin-right: 10px;
+    top: 0;
+    width: 100%;
+    max-height: 40px;
+    font-size: 15px;
 }
 img {
     width: 40px;
