@@ -16,7 +16,7 @@ main {
 
 #gridholder {
 	display: grid;
-	grid-template-columns: 1fr 2fr 1fr; /* Create 3 equal-width columns */
+	grid-template-columns: 9fr 20fr 6fr; /* Create 3 equal-width columns */
 }
 
 .column {
@@ -67,12 +67,12 @@ textarea {
 }
 
 .avatar img {
-	width: 13%;
+	width: 12%;
 	border-radius: 50%;;
 }
 
 .friend-request img {
-	width: 17%;
+	width: 20%;
 }
 
 .friend-request {
@@ -107,4 +107,15 @@ textarea {
 
 .profile section:first-child {
 	text-align: center;
+	border-radius: 5%;
+}
+
+.placeholder {
+	text-align: center;
+	padding: 25%;
+	background-color: #d3aaf0;
+	color:#E8F1F2;
+	outline-style: solid;
+	outline-width: thin;
+	outline-color: #006494;
 }
