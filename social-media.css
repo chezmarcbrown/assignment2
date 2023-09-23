@@ -7,6 +7,10 @@ body {
     background-color: #f2f2f2;
 }
 
+html {
+    font-family:sans-serif;
+}
+
 /* Navigation Bar */
 footer {
     bottom: 0;
@@ -33,7 +37,7 @@ span > a {
     color: black;
     padding: 12px 24px;
     text-decoration: none;
-    text-size-adjust:inherit;
+    /* text-size-adjust: 80%; I'm trying to make the icons bigger, but it won't work */
 }
 
 #profile-button {
@@ -72,20 +76,60 @@ ul {
     list-style-type:circle;
 }
 
+h2 > img {
+    width: 90px;
+}
+
 .profile > section {
     text-align: center;
 }
 
-.profile-points {
+.highlights > .profile-points {
     display: block;
     width: 100%;
     text-decoration: none;
     color:black;
 }
 
+h3 > ul {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tag.major, .tag.minor, .tag.tangential {
+    text-decoration: none;
+    font-size: smaller;
+    background-color: green;
+    color:white;
+    padding: 10px;
+    width:fit-content;
+    list-style-type: none;
+}
+
+.tag.major {
+    background-color:dimgray;
+}
+
+.tag.minor {
+    background-color: gray;
+}
+
+.tag.tangential {
+    background-color: lightgray;
+}
+
+.tag.major:hover, .tag.minor:hover, .tag.tangential:hover {
+    background-color: lime;
+    color: black;
+}
+
 /* Middle Column */
 .time-since-published {
     float: right;
+    color:darkgrey;
+    font-size: smaller;
+    margin-right: 1%;
 }
 
 button {
