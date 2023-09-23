@@ -1,14 +1,17 @@
-#gridholder {
-    column-count: 3;
-}
+/*Header, Main, Footer*/
 
-div.column > * {
-    margin: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+header {
+    position: fixed;
+    top: 0;
+    min-height: 30px;
+    width: 100%;
+    z-index: 10;
 }
 
 nav, footer {
-    background-color: slategrey;
+    background-color: darkslategrey;
+    color: white;
+    padding: 2px;
 }
 
 .fa {
@@ -18,32 +21,107 @@ nav, footer {
     text-decoration: none;
 }
 
-#profile-button {
-    float: right;
+main {
     position: relative;
-    top: -12px;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 30px;
 }
 
-article.highlights ul, article.interests ul {
-    list-style: none;
+footer {
+    height: 30px;
+    width: 100%;
+    z-index: 9;
 }
 
-li > a {
+/*General Stuff*/
+
+#gridholder {
+    column-count: 3;
+    display: flex;
+}
+
+#gridholder > :nth-child(1), #gridholder > :nth-child(3) {
+    width: 25%;
+}
+
+#gridholder > :nth-child(2)  {
+    width: 50%;
+}
+
+div.column > * {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    break-inside: avoid-column;
+    padding: 8px;
+    margin: 6px;
+}
+
+a {
+    color: white;
     text-decoration: none;
 }
 
-div.post-buttons>* {
-    background-color: darkgrey;
-    color: white;
+a:hover {
+    color: powderblue;
 }
 
 img {
     max-width: 50px;
 }
 
+/*Column 1 stuff*/
+
+.profile section h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.profile img {
+    scale: 2;
+}
+
 #profile-button img {
     border-radius: 50%;
     scale: .45;
+}
+
+#profile-button {
+    float: right;
+    position: relative;
+    top: -12px;
+}
+
+article.highlights {
+    padding: 0;
+}
+
+article.highlights ul {
+    background-color: slategray;
+    padding: 3px;
+}
+
+article.highlights ul li {
+    padding: 3px;
+}
+
+article.highlights ul, article.interests ul {
+    list-style: none;
+}
+
+.interests ul li{
+    display: inline-flex;
+    background-color: darkslategray;
+    color: white;
+    padding: 2px 6px;
+    margin: 2px;
+}
+
+/*Column 2 stuff*/
+
+div.post-buttons > * {
+    background-color: darkslategray;
+    color: white;
 }
 
 article.post section span {
@@ -55,6 +133,8 @@ article.post section span {
 article.post span.avatar img {
     border-radius: 50%;
 }
+
+/*Column 3 stuff*/
 
 article.friend-request *{
     align-self: center;
