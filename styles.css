@@ -11,7 +11,6 @@ nav {
     max-height: 40px;
     z-index: 1; /* No overlay on top of other text*/
     font-size: 18px; /* nav icons size */
-    /*padding-left: 10px; /* more space in between icons */
 }
 nav > span > a {/*Icons in the nav bar*/
     color: white;
@@ -19,15 +18,14 @@ nav > span > a {/*Icons in the nav bar*/
     text-align: center;
     padding: 12px;
     text-decoration: none;/* remove line under icon*/
-    /*border-radius: 50%;*/
+    
 }
-#profile-button { /*Needs to be on the right side of nav bar*/
+#profile-button{ /*Needs to be on the right side of nav bar*/
     padding: 0px;
     display: block;
     float: right;
-    /*height: 30px;
-    width: 30px;*/
-    border-radius: 50%; /* this should make the profile-button round */
+    width: 8%;
+    
 }
 a:hover{
     background-color: rgb(134, 130, 130);/*highlights items that you hover(can change color)*/
@@ -44,8 +42,17 @@ footer {
     max-height: 40px;
     font-size: 15px;
 }
-img {
+#profile-button img{
     width: 40px;
+    padding-bottom: 2px;
+}
+img {
+    width: 60px;
+    border-radius: 50%;
+}
+div > article > img{
+    width: 40px;
+    border-radius: 0%;
 }
 article {
     border: 1px solid black;/*Need border around each article*/
@@ -65,12 +72,14 @@ article {
  }
  .friend-request {
     text-align: center;
+    
  }
  .accept-button {
     background-color: green;
     text-decoration: none;
     color: white;
-    padding: 5px 32px;
+    padding: 5px 20px;
+    display: flex; /*added flex but now they're in two rows*/
     /*border around*/
     /*padding from text to border*/
  }
@@ -78,7 +87,8 @@ article {
     background-color: red;
     text-decoration: none;
     color: white;
-    padding: 5px 32px;
+    padding: 5px 20px;
+    display: flex; /*added flex but now they're in two rows*/
     /*border around*/
     /*padding from text to border*/
  }
@@ -87,23 +97,59 @@ article {
  }
  article {
     /* padding between articles needed */
+    padding: 5px;
  }
- .profile {
+ div > article > section{
+    
+ }
+ .profile{
     text-align: center;
+    list-style-type: none;
+    
+ }
+ .profile-points{
+    text-align: left;
+    list-style-type: none;
     /* fix bullets */
     /* add lines */
+    
  }
  .interests {
     /* format this */
+    font-style: normal;
+    text-align: left;
  }
+ .tag{
+    list-style-type: none;
+    font-size: 12px;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-block: 5px;
+ }
+ .major{
+    color: #fff;
+    background-color: #0c0c0c;
+ }
+ .minor{
+    color: #fff;
+    background-color: #717575;
+ }
+.tangential{
+    color: black;
+    background-color: #c9cfd2;
+}
  .column-friends {
+
+ }
+ 
+ .highlights {
     
  }
- .highlights {
-
- }
  .column-personal {
-
+    list-style-type: none;
  }
  textarea {
     margin: 5px;
