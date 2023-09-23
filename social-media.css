@@ -60,7 +60,7 @@ main {
 
 main > div {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 40% 60% 20%;
 }
 
 article {
@@ -91,10 +91,11 @@ h2 > img {
     color:black;
 }
 
-h3 > ul { /* NOT WORKING PROPERLY */
+ul.foo { /* NOT WORKING PROPERLY */
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background: bisque;
 }
 
 .tag.major, .tag.minor, .tag.tangential {
