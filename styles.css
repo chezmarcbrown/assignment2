@@ -14,15 +14,17 @@ main {
 	height: 100%;
 }
 
+/* Modifies the ratio of the three columns on the page*/
 #gridholder {
 	display: grid;
-	grid-template-columns: 9fr 20fr 6fr; /* Create 3 equal-width columns */
+	grid-template-columns: 9fr 20fr 6fr;
 }
 
 .column {
 	padding: 10px;
 }
 
+/* Adds a card like appearance to all the classes (i.e a border and shadows)*/
 .friend-request, .profile, .post, .new-post, .highlights, .interests {
 	box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4);
 	margin: 5px;
@@ -79,6 +81,7 @@ textarea {
 	text-align: center;
 }
 
+/* Both of the following style the buttons*/
 .accept-button {
 	text-decoration: none;
 	background-color: #1B98E0;
@@ -97,6 +100,7 @@ textarea {
 	text-align: center;
 }
 
+/* Adds a line break after profile images*/
 .profile section:first-child::after, .post section:first-child::after {
 	content: "";
 	display: block;
@@ -105,11 +109,13 @@ textarea {
 	background-color: #1B98E0;
 }
 
+/* Centers the image and title of the profile class*/
 .profile section:first-child {
 	text-align: center;
 	border-radius: 5%;
 }
 
+/* Modifies the Ad block*/
 .placeholder {
 	text-align: center;
 	padding: 25%;
