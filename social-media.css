@@ -91,7 +91,7 @@ h2 > img {
     color:black;
 }
 
-h3 > ul {
+h3 > ul { /* NOT WORKING PROPERLY */
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
