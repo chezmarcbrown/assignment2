@@ -83,19 +83,21 @@ article {
  }
  .friend-request {
     text-align: center;
+    /* fix alignment here(temp)
     list-style-type: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.431);
     transition: 0.3s;
     margin-bottom: 15px;
     width: 70%;
     height: 30%;
+    */
  }
  .accept-button {
     background-color: green;
     text-decoration: none;
     color: white;
     padding: 5px 20px;
-    display: flex;
+    display: inline-block;
     /*border around*/
     /*padding from text to border*/
  }
@@ -104,7 +106,7 @@ article {
     text-decoration: none;
     color: white;
     padding: 5px 20px;
-    display: flex;
+    display: inline-block;
     /*border around*/
     /*padding from text to border*/
  }
@@ -198,3 +200,19 @@ article {
     margin: 5px;
     width: 300px;
  }
+ .friend-request-buttons {
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   justify-content: center;
+}
+
+.friend-request-buttons-child {
+   -webkit-box-flex: 1 1 auto;
+   -moz-box-flex:  1 1 auto;
+   -webkit-flex:  1 1 auto;
+   -ms-flex:  1 1 auto;
+   flex:  1 1 auto;
+}
