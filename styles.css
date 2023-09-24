@@ -157,6 +157,22 @@ article.post span.avatar img {
     border-radius: 50%;
 }
 
+.post .post-buttons button:first-child:before {
+    font-family: FontAwesome;
+    content: "\f164";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+}
+
+.post .post-buttons button:last-child:before {
+    font-family: FontAwesome;
+    content: "\f075";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+}
+
 /*Column 3 stuff*/
 
 article.friend-request img {
