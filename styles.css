@@ -65,6 +65,17 @@ article {
     background-color: darkgrey;
     /* more changes to buttons */
 }
+.new-post{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.179);
+    transition: 0.3s;
+    margin-bottom: 15px;
+    height: 20%;
+}
+.post{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.482);
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
  #gridholder {
     display: grid;
     grid-template-columns: 2fr 4fr 2fr;
@@ -72,14 +83,19 @@ article {
  }
  .friend-request {
     text-align: center;
-    
+    list-style-type: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.431);
+    transition: 0.3s;
+    margin-bottom: 15px;
+    width: 70%;
+    height: 30%;
  }
  .accept-button {
     background-color: green;
     text-decoration: none;
     color: white;
     padding: 5px 20px;
-    display: flex; /*added flex but now they're in two rows*/
+    display: flex;
     /*border around*/
     /*padding from text to border*/
  }
@@ -88,7 +104,7 @@ article {
     text-decoration: none;
     color: white;
     padding: 5px 20px;
-    display: flex; /*added flex but now they're in two rows*/
+    display: flex;
     /*border around*/
     /*padding from text to border*/
  }
@@ -99,17 +115,22 @@ article {
     /* padding between articles needed */
     padding: 5px;
  }
- div > article > section{
-    
- }
  .profile{
     text-align: center;
     list-style-type: none;
-    
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    margin-bottom: 15px;
+    height: 50%;
+ }
+ .profile:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
  }
  .profile-points{
     text-align: left;
     list-style-type: none;
+    padding: 2px 16px;
     /* fix bullets */
     /* add lines */
     
@@ -118,6 +139,12 @@ article {
     /* format this */
     font-style: normal;
     text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    /*height: 25%;*/
+ }
+ .interests:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
  }
  .tag{
     list-style-type: none;
@@ -142,11 +169,27 @@ article {
     background-color: #c9cfd2;
 }
  .column-friends {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
  }
  
  .highlights {
-    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    margin-bottom: 15px;
+ }
+ .highlights:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ }
+ .placeholder{
+    text-align: center;
+    font-style: normal;
+    background-color: #f0d9b9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    margin-bottom: 15px;
+    width: 70%;
+    height: 25%;
  }
  .column-personal {
     list-style-type: none;
