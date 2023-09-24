@@ -6,7 +6,45 @@ html, body, main {
 body {
 	color: #006494;
 }
+header {
+    background-color: black;
+    color: black;
+}
 
+footer {
+    background-color: black;
+    color: black;
+}
+
+nav {
+    background-color: black;
+    color: black;
+    padding: fixed;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    transition: 0.25s;
+    color: blue;
+}
+nav a:active,
+nav a:focus {
+    color: #fff;
+}
+/*#profile-button { Trying to get this on the right of the nav bar
+    float: right;
+}*/
 main {
 	display:grid;
 	justify-content: center; /* Horizontally center the grid */
