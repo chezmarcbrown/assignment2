@@ -1,24 +1,44 @@
 html, body, main {
 	background-color: #E8F1F2;
 	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+	height: 100vh;
+}
+
+main {
+	min-height: 90vh;
+}
+
+html {
+	height: 100vh;
 }
 
 body {
 	color: #006494;
 }
 header {
-    background-color: black;
-    color: black;
+    background-color: #006494;
+    color: #006494;
 }
 
 footer {
-    background-color: black;
-    color: black;
+    background-color: #006494;
+    color: #E8F1F2;
+	left: 0;
+	bottom:0;
+	width: 100%;
+	height: 5%;
+	position: fixed;
+	overflow: hidden;
+}
+
+footer p {
+	padding-left: 10px;
 }
 
 nav {
-    background-color: black;
-    color: black;
+    background-color: #006494;
+    color: #006494;
     padding: fixed;
     position: fixed;
     top: 0;
@@ -38,8 +58,7 @@ nav a:hover {
     transition: 0.25s;
     color: blue;
 }
-nav a:active,
-nav a:focus {
+nav a:active, nav a:focus {
     color: #fff;
 }
 /*#profile-button { Trying to get this on the right of the nav bar
