@@ -1,7 +1,7 @@
 main {
     padding-top: 50px;
-}
-nav {
+ }
+ nav {
     border: 1px;
     background-color: rgb(68, 62, 62);/*Choose background color*/
     position: fixed;/*Make it where it moves while scrolling*/
@@ -11,29 +11,29 @@ nav {
     max-height: 40px;
     z-index: 1; /* No overlay on top of other text*/
     font-size: 18px; /* nav icons size */
-}
-nav > span > a {/*Icons in the nav bar*/
+ }
+ nav > span > a {/*Icons in the nav bar*/
     color: white;
     display: block;
     text-align: center;
     padding: 12px;
     text-decoration: none;/* remove line under icon*/
     
-}
-#profile-button{ /*Needs to be on the right side of nav bar*/
+ }
+ #profile-button{ /*Needs to be on the right side of nav bar*/
     padding: 0px;
     display: block;
     float: right;
     width: 8%;
     
-}
-a:hover{
+ }
+ a:hover{
     background-color: rgb(134, 130, 130);/*highlights items that you hover(can change color)*/
-}
-a:active{
+ }
+ a:active{
     background-color: #888d7e89;/*highlights nav icons once you click on them */
-}
-footer {
+ }
+ footer {
     background-color: rgb(68, 62, 62);/*choose background color(same color as nav bar)*/
     color: white; /* white color for the text */
     margin-right: 10px;
@@ -41,41 +41,52 @@ footer {
     width: 100%;
     max-height: 40px;
     font-size: 15px;
-}
-#profile-button img{
+ }
+ #profile-button img{
     width: 40px;
     padding-bottom: 2px;
-}
-img {
+ }
+ img {
     width: 60px;
     border-radius: 50%;
-}
-div > article > img{
+ }
+ div > article > img{
     width: 40px;
     border-radius: 0%;
-}
-article {
+ }
+ article {
     border: 1px solid black;/*Need border around each article*/
-}
-.highlights {/*Section needs to have a grey background*/
+ }
+ .highlights {/*Section needs to have a grey background*/
     background-color: darkgrey;
     /*remove bullet points*/
-}
-.post-buttons > button{
+ }
+ .post-buttons > button{
     background-color: darkgrey;
     /* more changes to buttons */
-}
-.new-post{
+ }
+ .highlights >  .profile-points > ul > li{
+    list-style-type: none;
+    display: list-item;
+ }
+ article > section > textarea{
+    text-align: left;
+ }
+ section > .post-buttons > button{
+    text-align: left;
+ }
+ .new-post{
+    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.179);
     transition: 0.3s;
     margin-bottom: 15px;
     height: 20%;
-}
-.post{
+ }
+ .post{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.482);
     transition: 0.3s;
     margin-bottom: 15px;
-}
+ }
  #gridholder {
     display: grid;
     grid-template-columns: 2fr 4fr 2fr;
@@ -83,14 +94,11 @@ article {
  }
  .friend-request {
     text-align: center;
-    /* fix alignment here(temp)
-    list-style-type: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.431);
     transition: 0.3s;
     margin-bottom: 15px;
-    width: 70%;
+    /*width: 70%;*/
     height: 30%;
-    */
  }
  .accept-button {
     background-color: green;
@@ -120,7 +128,7 @@ article {
  .profile{
     text-align: center;
     list-style-type: none;
-    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+    font-style: normal;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.3s;
     margin-bottom: 15px;
@@ -131,12 +139,12 @@ article {
  }
  .profile-points{
     text-align: left;
-    list-style-type: none;
+    font-style: normal;
     padding: 2px 16px;
-    /* fix bullets */
     /* add lines */
     
  }
+ 
  .interests {
     /* format this */
     font-style: normal;
@@ -166,19 +174,20 @@ article {
     color: #fff;
     background-color: #717575;
  }
-.tangential{
+ .tangential{
     color: black;
     background-color: #c9cfd2;
-}
+ }
  .column-friends {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+ 
  }
  
  .highlights {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.3s;
     margin-bottom: 15px;
+    
  }
  .highlights:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -190,7 +199,6 @@ article {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.3s;
     margin-bottom: 15px;
-    width: 70%;
     height: 25%;
  }
  .column-personal {
@@ -201,18 +209,19 @@ article {
     width: 300px;
  }
  .friend-request-buttons {
-   display: -webkit-box;
-   display: -moz-box;
-   display: -ms-flexbox;
-   display: -webkit-flex;
-   display: flex;
-   justify-content: center;
-}
-
-.friend-request-buttons-child {
-   -webkit-box-flex: 1 1 auto;
-   -moz-box-flex:  1 1 auto;
-   -webkit-flex:  1 1 auto;
-   -ms-flex:  1 1 auto;
-   flex:  1 1 auto;
-}
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20%;
+ }
+ 
+ .friend-request-buttons-child {
+    -webkit-box-flex: 1 1 auto;
+    -moz-box-flex:  1 1 auto;
+    -webkit-flex:  1 1 auto;
+    -ms-flex:  1 1 auto;
+    flex:  1 1 auto;
+ }
