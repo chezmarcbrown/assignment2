@@ -21,6 +21,17 @@ nav, footer {
     text-decoration: none;
 }
 
+#profile-button img {
+    border-radius: 50%;
+    scale: .45;
+}
+
+#profile-button {
+    float: right;
+    position: relative;
+    top: -12px;
+}
+
 main {
     position: relative;
     top: 0;
@@ -81,17 +92,6 @@ img {
     scale: 2;
 }
 
-#profile-button img {
-    border-radius: 50%;
-    scale: .45;
-}
-
-#profile-button {
-    float: right;
-    position: relative;
-    top: -12px;
-}
-
 article.highlights {
     padding: 0;
 }
@@ -119,6 +119,29 @@ article.highlights ul, article.interests ul {
 
 /*Column 2 stuff*/
 
+textarea {
+    resize: vertical;
+    position: relative;
+    left: -3px;
+    min-height: 40px;
+}
+
+.post section {
+    position: relative;
+}
+
+.post section span:nth-last-child(1) {
+    float: right;
+}
+
+.author {
+    font-size: 30px;
+}
+
+.time-since-published {
+    color: darkgrey;
+}
+
 div.post-buttons > * {
     background-color: darkslategray;
     color: white;
@@ -136,19 +159,35 @@ article.post span.avatar img {
 
 /*Column 3 stuff*/
 
-article.friend-request *{
+article.friend-request img {
+    display: block;
+    margin: auto;
+}
+
+article.friend-request * {
     align-self: center;
-    width: 50%;
+    text-align: center;
+    font-size: 20px;
+}
+
+div.friend-request-buttons > a {
+    display: inline-block;
+    column-width: 100px;
+    height: 25px;
 }
 
 a.accept-button {
     background-color: green;
-    color: white;
-    text-decoration: none;
 }
 
 a.reject-button {
     background-color: red;
-    color: white;
-    text-decoration: none;
+}
+
+.placeholder {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
