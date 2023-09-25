@@ -1,0 +1,282 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top:40px;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+/* Header Styling */
+header {
+    background-color: rgb(139, 60, 208);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+nav span {
+    display: inline-block;
+}
+
+nav a {
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a img {
+    border-radius: 5%;
+    width: 50px;
+    height: 50px;
+
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+#gridholder {
+    display: grid;
+    grid-template-columns: 3fr 5fr 2fr;
+    gap: 20px;
+    padding-top: 60px;
+}
+
+/* Column Styling */
+.column article {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(202, 0, 247, 0.439);
+}
+
+.column article.highlights {
+    padding: 0;
+}
+
+
+
+/* Profile Box */
+.profile, .highlights, .interests {
+    padding: 15px 20px;
+    position: relative;
+}
+
+.profile section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profile .profile-points {
+    border-top: 1px solid rgb(222, 217, 217);
+    margin-top: 30px;
+}
+
+.profile h2 img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.profile ul li {
+    margin: 10px 0;
+}
+
+/* Highlights Box */
+.highlights {
+    background-color: transparent;
+    padding: 0;
+}
+
+.highlights .profile-points ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.highlights .profile-points li {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.highlights .profile-points li:last-child {
+    margin-bottom: 0;
+}
+
+.highlights .profile-points li a {
+    display: block;
+    background-color: rgb(139, 60, 208);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 0;
+    text-align: center;
+    width: 100%; 
+    border: 0.5px solid black;
+}
+
+.highlights .profile-points li a:hover {
+    opacity: 0.8;
+}
+
+/* Interests Box */
+.interests ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.interests ul li {
+    width: 80px;
+    height: 20px;
+    background-color: rgb(139, 60, 208);
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Posts Column*/
+
+/* New Post Box*/
+.new-post h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Post Boxes */
+.post {
+    text-align: left;
+}
+
+.posts .post section {
+    padding: 15px 20px;
+    position: relative;
+}
+
+.posts button {
+    padding: 7px;
+}
+
+.posts .post .time-since-published {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.9em;
+    color: rgb(24, 87, 150)
+}
+
+.posts .post > section:first-of-type {
+    border-bottom: 1px solid rgb(190, 190, 190);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.posts .post .avatar {
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.posts .post .avatar img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.posts .post .author {
+    flex-grow: 1;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.post-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Friends Column */
+
+.friend-request {
+    text-align: center;
+}
+
+.friend-request h3 {
+    margin-bottom: 15px;
+}
+
+.friend-request img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+}
+
+.friend-request h4 {
+    margin-top: 10px;
+}
+
+.friend-request-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.accept-button {
+    background-color: green;
+    color: white;
+    border: 6px solid green;
+    border-radius: 10%;
+    text-decoration: none;
+}
+
+.reject-button {
+    background-color: red;
+    color: White;
+    border: 6px solid red;
+    border-radius: 10%;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(139, 60, 208);;
+    color: white;
+    width: 100%;
+    height: 60px;
+}
+
+footer p {
+    background-color: inherit;
+    color: inherit;
+    position: relative;
+    text-align: auto;
+    height: auto;
+    width: auto;
+    padding: 15px;
+    margin: 15px;
+}
