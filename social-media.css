@@ -1,0 +1,212 @@
+img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+html {
+    font-family:sans-serif;
+}
+
+/* Navigation Bar */
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:lightsteelblue;
+    color: black;
+    padding: 10px;
+    width: 100%;
+}
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color:lightsteelblue;
+    color: black;
+    width: 100%;
+}
+
+span > a {
+    float: left;
+    color: black;
+    padding: 12px 24px;
+    text-decoration: none;
+    /* text-size-adjust: 80%; I'm trying to make the icons bigger, but it won't work */
+}
+
+#profile-button {
+    float: right;
+}
+
+a > img {
+    width: 25px;
+}
+
+span > a:hover {
+    background-color: lime;
+    color: white;
+}
+
+/* Main */
+main {
+    padding-top: 55px;
+}
+
+main > div {
+    display: grid;
+    grid-template-columns: 20% 60% 20%; /* You changed the first one into 40%, but that caused the contents to overlap causing the need to scroll sideways so I changed it back */
+}
+
+article {
+    background-color: white;
+    border: 1px solid white;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px;
+}
+
+/* Leftmost Column */
+ul {
+    list-style-type:circle;
+}
+
+h2 > img {
+    width: 90px;
+}
+
+.profile > section {
+    text-align: center;
+}
+
+ul.about-me {
+    list-style-type: none;
+}
+
+ul.about-me li {
+    padding: 5px;
+}
+
+ul.my-tabs {
+    list-style: none;
+}
+
+article.highlights {
+    background-color: lightsteelblue;
+    border: 1px solid lightsteelblue;
+}
+
+ul.my-tabs li a {
+    display: block;
+    text-decoration: none;
+    color:black;
+    background-color: lightsteelblue;
+    padding: 8px;
+}
+
+ul.my-tabs li a:hover {
+    background-color: lime;
+    color: white;
+    text-decoration: none;
+}
+
+ul.foo {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: bisque;
+}
+
+.tag.major, .tag.minor, .tag.tangential {
+    text-decoration: none;
+    font-size: smaller;
+    background-color: green;
+    color:white;
+    padding: 10px;
+    width:fit-content;
+    list-style-type: none;
+}
+
+.tag.major {
+    background-color:dimgray;
+}
+
+.tag.minor {
+    background-color: gray;
+}
+
+.tag.tangential {
+    background-color: lightgray;
+}
+
+.tag.major:hover, .tag.minor:hover, .tag.tangential:hover {
+    background-color: lime;
+    color: black;
+}
+
+/* Middle Column */
+.time-since-published {
+    float: right;
+    color:darkgrey;
+    font-size: smaller;
+    margin-right: 1%;
+}
+
+article.post section:nth-child(2) {
+    border-top: 1px solid lightslategray;
+}
+
+button {
+    background-color: lightsteelblue;
+    border: none;
+    color: black;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: lime;
+    color: white;
+}
+
+/* Rightmost Column */
+.friend-request h3, .friend-request h4 {
+    text-align: center;
+}
+
+.friend-request img {
+    height: 120px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 0%;
+}
+
+.friend-request-buttons {
+    display: flex;
+}
+
+.friend-request-buttons a:hover {
+    background-color: lime;
+}
+
+.accept-button, .reject-button {
+    text-decoration: none;
+    background-color: green;
+    color:white;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.reject-button {
+    background-color: red;
+}
