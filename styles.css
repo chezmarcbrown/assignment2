@@ -1,0 +1,232 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: midnightblue;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.split {
+    float: right;
+    border-radius: 50%;
+    position: fixed;
+    top: 8px;
+    right: 20px;
+    width: 30px;
+}
+
+footer {
+    background-color: midnightblue;
+    overflow: hidden;
+    color: whitesmoke;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#gridholder {
+    display: grid;
+    grid-template-areas:
+        "nav nav nav"
+        "columnpersonal columnposts columnfriends"
+        "footer footer footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+.profile {
+    display: grid;
+    gap: 20px;
+    border: black solid 1px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 4px grey;
+}
+.profile img {
+    width: 75%;
+}
+
+.highlights {
+    display: grid;
+    border: black solid 1px;
+    margin: 10px;
+    box-shadow: 0px 0px 4px 4px grey;
+}
+
+.interests {
+    display: grid;
+    gap: 20px;
+    border: black solid 1px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 4px grey;
+}
+
+.new-post {
+    display: grid;
+    gap: 20px;
+    border: black solid 1px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 4px grey;
+}
+
+.post {
+    display: grid;
+    gap: 20px;
+    border: black solid 1px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 4px grey;
+}
+
+.friend-request {
+    display: grid;
+    gap: 20px;
+    border: black solid 1px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 4px grey;
+}
+
+.placeholder {
+    display: grid;
+    gap: 20px;
+    border: black solid 1px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 4px grey;
+    background-color: papayawhip;
+}
+
+h2, h3, h4, .columnfriends {
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.friend-request-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the links inside the navigation bar */
+.friend-request-buttons a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 9px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.friend-request-buttons a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.friend-request-buttons a.active {
+    background-color: blue;
+    color: white;
+}
+
+
+.accept-button {
+    background-color: green;
+    border: 1px;
+    color:  whitesmoke;
+    border-radius: 5px;
+    min-width: 50%;
+    min-height: 100%;
+    padding: 5px;
+}
+
+.reject-button {
+    background-color: red;
+    border: 1px;
+    color:  whitesmoke;
+    border-radius: 5px;
+    min-width: 50%;
+    min-height: 100%;
+    padding: 5px;
+}
+
+.avatar img, .author {
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 15%;
+    font-size: 20px;
+}
+
+.time-since-published {
+    position: relative;
+    float: right;
+    top: 10px;
+    right: 20px;
+    width: 20px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.profile ul:last-child, .post p {
+    border-top-style: solid;
+    border-top-width: thin;
+    border-color: silver;
+    padding-top: 35px;
+}
+
+.highlights li{
+    border: 2px midnightblue;
+    background-color: royalblue;
+    color: whitesmoke;
+    font-size:large;
+    width: 100%;
+}
+
+.highlights li:hover{
+    background-color: #ddd;
+}
+
+.interests li {
+    border: 1px solid blue;
+    display: inline-block;
+    margin: 2px;
+    padding: 5px; 
+}
+
+.center {
+    min-width: 40%;
+    min-height: 40%;
+}
