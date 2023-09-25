@@ -21,15 +21,15 @@ nav, footer {
     text-decoration: none;
 }
 
-#profile-button img {
-    border-radius: 50%;
-    scale: .45;
-}
-
 #profile-button {
     float: right;
     position: relative;
     top: -12px;
+}
+
+#profile-button img {
+    border-radius: 50%;
+    scale: .45;
 }
 
 main {
@@ -74,7 +74,7 @@ a {
 }
 
 a:hover {
-    color: powderblue;
+    color: coral;
 }
 
 img {
@@ -96,23 +96,39 @@ article.highlights {
     padding: 0;
 }
 
-article.highlights ul {
+.highlights ul {
     background-color: slategray;
     padding: 3px;
 }
 
-article.highlights ul li {
+.highlights ul li {
     padding: 3px;
 }
 
-article.highlights ul, article.interests ul {
+.highlights ul, .interests ul {
     list-style: none;
 }
 
-.interests ul li{
+.major {
     display: inline-flex;
     background-color: darkslategray;
     color: white;
+    padding: 2px 6px;
+    margin: 2px;
+}
+
+.minor {
+    display: inline-flex;
+    background-color: grey;
+    color: white;
+    padding: 2px 6px;
+    margin: 2px;
+}
+
+.tangential {
+    display: inline-flex;
+    background-color: gainsboro;
+    color: black;
     padding: 2px 6px;
     margin: 2px;
 }
@@ -142,18 +158,22 @@ textarea {
     color: darkgrey;
 }
 
-div.post-buttons > * {
+.post-buttons > * {
     background-color: darkslategray;
     color: white;
 }
 
-article.post section span {
+.post-buttons > button:hover {
+    color: coral;
+}
+
+.post section span {
     position: relative;
     top: 5px;
     left: 5px;
 }
 
-article.post span.avatar img {
+.post span.avatar img {
     border-radius: 50%;
 }
 
@@ -175,29 +195,37 @@ article.post span.avatar img {
 
 /*Column 3 stuff*/
 
-article.friend-request img {
+.friend-request img {
     display: block;
     margin: auto;
 }
 
-article.friend-request * {
+.friend-request * {
     align-self: center;
     text-align: center;
     font-size: 20px;
 }
 
-div.friend-request-buttons > a {
+.friend-request-buttons > a {
     display: inline-block;
     column-width: 100px;
     height: 25px;
 }
 
-a.accept-button {
+.accept-button {
     background-color: green;
 }
 
-a.reject-button {
+.accept-button:hover {
+    color: black;
+}
+
+.reject-button {
     background-color: red;
+}
+
+.reject-button:hover {
+    color: black;
 }
 
 .placeholder {
