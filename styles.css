@@ -176,8 +176,12 @@ button:hover {
 }
 
 textarea {
-	width: 98% !important;
 	margin-bottom: 5px;
+	padding-right: -5px;
+}
+
+.new-post section {
+	padding: 5px;
 }
 
 .profile img {
@@ -195,6 +199,8 @@ textarea {
 
 .friend-request {
 	text-align: center;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 /* Both of the following style the buttons*/
