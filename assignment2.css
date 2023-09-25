@@ -1,0 +1,326 @@
+
+h2 {
+    margin-top: 0;
+}
+
+body {
+    border : 0;
+    margin : 0;
+    box-sizing: border-box;
+    display: flex;
+    height : 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header {
+    top : 0;
+    position : fixed;
+    color : white;
+    background-color : cadetblue;
+    width : 100%;
+}
+
+a img {
+    border-radius : 50%;
+    float : right;
+    padding: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+.fa {
+    float: left;
+    text-align: center;
+    padding: 14px 14px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    font-size: 25px;
+    color:#0d2c2b;
+    text-decoration: none;
+    height: 100%;
+}
+
+.fa:hover{
+    background-color:#2f8d8a;
+    color:#b2cfe0;
+}
+#profile-button:hover{
+    background-color:#2f8d8a;
+}
+#profile-button {
+    background-color : cadetblue;
+    float : right;
+}
+
+main {
+    margin-top: 60px;
+    margin-bottom: 5px;
+    margin-left : auto;
+    margin-right : auto;
+    max-width : 75%;
+    box-sizing: inherit;
+}
+
+#gridholder{
+    display: grid;
+    grid-template-columns: 25% 58% 17%;
+}
+
+.column article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0 2px 5px 0;
+    vertical-align: top;
+    box-sizing: inherit;
+}
+
+.personal, .friends {
+    text-align: center;
+}
+
+.profile {
+    background-color: aquamarine;
+}
+
+.profile-points li {
+    text-align: left;
+}
+
+.interests {
+    text-align: left;
+    padding-left: 10px;
+    background-color: aliceblue;
+}
+
+
+/* TAGS */
+
+li.tag {
+    display: inline-block;
+    color: white;
+    background-color: lightblue;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 2px;
+}
+
+li.major {
+    background-color: darkcyan;
+}
+
+li.minor {
+    background-color: darkturquoise;
+}
+
+li.tangential {
+    background-color: paleturquoise;
+    color: black;
+}
+
+/* HIGHLIGHTS */
+
+article.highlights {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.highlights ul {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.highlights .profile-points li {
+    list-style: none;
+    text-align: center;
+    display: block;
+    background-color: mediumaquamarine;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+.highlights .profile-points a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.highlights .profile-points a:hover {
+    background-color: lightskyblue;
+}
+
+
+.posts{
+    border-radius : 5px;
+    margin-left : 20px;
+    margin-right : 20px;
+}
+
+.new-post {
+    border-radius : 5px;
+    padding : 10px;
+    box-sizing: border-box;
+}
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    resize: none;
+    min-height: 55px;
+}
+
+
+.post {
+    border-radius : 5px;
+    box-shadow: 0 2px 5px 0;
+    padding : 10px;
+    height: fit-content;
+}
+
+
+.avatar {
+    display:inline-block;
+}
+
+.avatar > img{
+    border-radius : 50%;
+}
+
+.author {
+    display : inline-block;
+    vertical-align : top;
+    font-size : 20px; 
+    padding-top : 15px;
+}
+
+.time-since-published {
+    float : right;
+    vertical-align :top;
+    font-size : 15px; 
+    color:#5a5a5a;
+}
+
+section > p {
+    border-top: 2px solid #e7e7e7;
+    padding:10px;
+    margin-bottom: 0;
+}
+
+.post-buttons button {
+    background-color: cadetblue;
+    border: none;
+    color:#ffffff;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.post-buttons button:hover {
+    background-color:#2f8d8a;
+    border: none;
+    color:#ffffff;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+/* FRIEND REQUESTS */
+
+.friend-request {
+    background-color: lightseagreen;
+}
+
+.friend-request h3, .friend-request h4 {
+    background-color: white;
+    display: inline-block;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.friend-request-buttons > a {
+    display: inline-block;
+    font-size: 24px;
+    text-decoration: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+.friend-request a:hover {
+    border: solid;
+    border-color: white;
+    border-width: 3px;
+}
+
+.accept-button {
+    background-color: green;
+    color: white;
+}
+
+.reject-button {
+    background-color: darkred;
+    color: white;
+}
+
+.accept-button:hover {
+    background-color: yellowgreen;
+}
+
+.reject-button:hover {
+    background-color: indianred;
+
+}
+
+article.profile img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.friend-request img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+footer{
+    width : 100%;
+    bottom: 0;
+    padding: 15px;
+    margin-top: auto;
+    box-sizing: inherit;
+    color:#0d2c2b;
+    background-color : cadetblue;
+}
+
+.placeholder p{
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
