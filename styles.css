@@ -82,6 +82,41 @@ nav a:active, nav a:focus {
 	padding: 10px;
 }
 
+.profile-points {
+	height: max-content;
+}
+
+.highlights {
+	padding: 0 !important;
+}
+
+.highlights a{
+	text-decoration: none;
+}
+
+.highlights ul {
+	list-style: none;
+	height: 100%;
+	padding: 0;
+	margin:0;
+}
+
+.highlights li {
+	background-color: #006494;
+	color: #E8F1F2;
+	height: 100%;
+	padding: 3px;
+}
+
+.highlights li:hover {
+	background-color: #1B98E0;
+}
+
+a:visited {
+	color: #E8F1F2
+  }
+  
+
 /* Adds a card like appearance to all the classes (i.e a border and shadows)*/
 .friend-request, .profile, .post, .new-post, .highlights, .interests {
 	box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4);
