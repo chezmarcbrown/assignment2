@@ -1,0 +1,294 @@
+html, body, main {
+	background-color: #E8F1F2;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+}
+
+main {
+	display:grid;
+	justify-content: center; /* Horizontally center the grid */
+	align-items: center; /* Vertically center the grid */
+	flex-grow: 1;
+}
+
+html {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+}
+
+body {
+	color: #006494;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+header {
+    background-color: #006494;
+    color: #006494;
+	margin-bottom: 20px;
+	min-height: 50px;
+}
+
+footer {
+    background-color: #006494;
+    color: #006494;
+	width: 100%;
+}
+
+footer p {
+	padding-left: 10px;
+}
+
+nav {
+    background-color: #006494;
+    color: #006494;
+    padding: fixed;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+	border-radius: 50%;
+	padding: 5px 10px 5px 5px;
+	float: right;
+	width: 40px !important;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 7px;
+	padding: 0px 10px;
+}
+
+nav a:hover {
+    transition: 0.25s;
+    color: #1B98E0;
+}
+nav a:active, nav a:focus {
+    color: #fff;
+}
+/*#profile-button { Trying to get this on the right of the nav bar
+    float: right;
+}*/
+
+/* Modifies the ratio of the three columns on the page*/
+#gridholder {
+	display: grid;
+	grid-template-columns: 9fr 20fr 6fr;
+	height: 100%;
+}
+
+
+.interests ul {
+	list-style: none;
+	padding: 0;
+}
+
+.interests ul li:nth-child(5), .interests ul li:nth-child(6) {
+	background-color: #1B98E0;
+}
+
+.interests ul li:nth-child(7){
+	background-color: #d3aaf0;
+}
+
+.interests li {
+	display: inline-block;
+	margin: 5px;
+	background-color: #006494;
+	color: #E8F1F2;
+	padding: 5px;
+}
+
+.column {
+	padding: 10px;
+}
+
+.profile-points {
+	height: max-content;
+}
+
+.highlights {
+	padding: 0 !important;
+}
+
+.highlights a{
+	text-decoration: none;
+}
+
+.highlights ul {
+	list-style: none;
+	height: 100%;
+	padding: 0;
+	margin:0;
+}
+
+.highlights li {
+	background-color: #006494;
+	color: #E8F1F2;
+	height: 100%;
+	padding: 3px;
+}
+
+.highlights li:hover {
+	background-color: #1B98E0;
+	cursor: pointer;
+}
+
+a:visited {
+	color: #E8F1F2
+  }
+  
+
+/* Adds a card like appearance to all the classes (i.e a border and shadows)*/
+.friend-request, .profile, .post, .new-post, .highlights, .interests {
+	box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4);
+	margin: 5px;
+	margin-bottom: 10px;
+	padding: 10px;
+	outline-style: solid;
+	outline-width: thin;
+}
+
+.post, .new-post {
+	margin-bottom: 10px;
+}
+
+.new-post section{
+	text-align: center;
+}
+
+.post-buttons{
+	text-align: left;
+}
+
+button {
+	border: none;
+	padding: 5px 10px;
+	background-color: #006494;
+	color: #E8F1F2;
+	border-radius: 5%;
+	transition-duration: 0.1s;
+}
+
+button:hover {
+	background-color:#1B98E0;
+	cursor: pointer;
+}
+
+textarea {
+	margin-bottom: 5px;
+	padding-right: -5px;
+}
+
+.new-post section {
+	padding: 5px;
+}
+
+.profile img {
+	width: 40%;
+}
+
+.avatar {
+	display: inline-block;
+	width: 10%;
+	overflow: hidden;
+	height: auto;
+}
+
+.avatar img {
+	border-radius: 50%;
+	width: 100%;
+  	height: auto;
+}
+
+.post section {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	position: relative;
+}
+
+.friend-request img {
+	width: 20%;
+}
+
+.friend-request {
+	text-align: center;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.author {
+	justify-content: center;
+	position: relative;
+	top: 50%;
+	margin: 0px 5px;
+}
+
+.time-since-published {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: small;
+	color: #1B98E0
+}
+
+/* Both of the following style the buttons*/
+.accept-button {
+	text-decoration: none;
+	background-color: #1B98E0;
+	color: #E8F1F2;
+	padding: 3% 8%;
+	display: inline-block;
+	text-align: center;
+}
+
+.reject-button {
+	text-decoration: none;
+	background-color: #9400FF;
+	color: #E8F1F2;
+	padding: 3% 8%;
+	display: inline-block;
+	text-align: center;
+}
+
+.accept-button:hover, .reject-button:hover {
+	cursor: pointer;
+	background-color: #006494;
+}
+
+/* Adds a line break after profile images*/
+.profile section:first-child::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #1B98E0;
+}
+
+/* Centers the image and title of the profile class*/
+.profile section:first-child {
+	text-align: center;
+	border-radius: 5%;
+}
+
+/* Modifies the Ad block*/
+.placeholder {
+	text-align: center;
+	padding: 25%;
+	background-color: #d3aaf0;
+	color:#E8F1F2;
+	outline-style: solid;
+	outline-width: thin;
+	outline-color: #006494;
+}
