@@ -8,25 +8,495 @@
         <!-- add a link to your stylesheet -->
         <link rel="stylesheet" href="styles.css">
         <!-- delete the following line -->
-        <style>img{width:50px}</style>
+        <style>
+            img{
+                width:60px;
+            }
+
+            body {
+                background-color: #f5f7f8; 
+            }
+
+            .profile, .post1, .post2, .interests, .new-post, .friend-request, .placeholder{
+                box-shadow: 0px 0px 4px  #5A5A5A;
+                border: 0px gray;
+                border-radius: 5px;
+                min-width: 200px;
+                background-color: #ffffff;
+          
+            }
+
+            .post-buttons button {
+                background-color: #607d8b;
+                border: none;
+                color: white;
+                text-align: center;
+                font-weight: bold ;
+                font-size: 16px;
+                display: inline-block;
+                padding: 12px 28px;
+
+
+            }
+
+            .post-buttons button:hover {
+                background-color: #888b8e;
+                color: black;
+            }
+
+
+            /*********Jane Doe*************/
+            .profile {
+                margin-left: 10px;
+                margin-right: 80%;
+                margin-top: 85px;
+            }
+
+            .profile-pic {
+                border-radius: 50%;
+            }
+
+            .profile .profile-pic {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100px;
+            }
+
+
+            .profile .profile-points {
+                list-style-type: disc;
+                text-align: center ;
+            }
+
+
+            #jane-doe {
+                text-align: center;
+            }
+
+            /************** What is On Your Mind ******************/
+
+            .new-post {
+                
+                position: absolute;
+                width: 1000px;
+                height: 150px;
+                margin:auto;
+                top: 85px;
+                left: 0;
+                right: 0;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+
+
+            /************My Groups, Events, Photos****************/
+  
+            .highlights .profile-points ul li {
+                list-style-type: none;
+                background-color: #607d8b;
+
+            }
+
+            .highlights {
+                margin-left: -30px;
+                margin-right: 80%;
+            }
+
+
+            .highlights .profile-points li a{
+                
+                text-decoration: none;
+                background-color: #607d8b;
+                color: white;
+                display: block;
+            }
+
+            .highlights .profile-points li a:hover{
+                background-color: #888b8e;
+                color: black;
+            }
+
+
+              /************Interests****************/
+            
+              .interests {
+                margin-left: 10px;
+                margin-right: 80%;
+              
+              }
+
+              .interests h3 {
+                padding: 5px 10px;
+              
+
+              }
+
+              .interests ul {
+                list-style-type: none;
+                padding: 10px;
+            }
+
+              .interests ul li {
+                text-align: center;
+                border: 1px solid transparent;
+                padding: 5px;
+                display: inline-block;
+                color: white;
+                
+              }
+
+              .interests .tag-major {
+                background-color: #303e45;
+
+              }
+
+              .interests .tag-minor {
+                background-color: #5b7380;
+              }
+
+              .interests .tag-tangential {
+                background-color: #dfe5e8;
+                color: black;
+              }
+
+
+               /************John Doe Post 1****************/
+
+              .post1 {
+                position: absolute;
+                width: 1000px;
+                height: 250px;
+                margin:auto;
+                top: 250px;
+                left: 0;
+                right: 0;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                
+              }
+
+              .post1 .profile-pic {
+                padding: 20px 20px;
+        
+              }
+
+              .post1 .author{
+                position: absolute;
+                padding: 35px 10px;
+                font-size: 26px;
+              }
+
+              .post1 .time-since-published {
+                position: absolute;
+                right: 20px;
+                top: 35px;
+                font-size: small;
+                color: #b8b8b8;
+                white-space: nowrap;
+              }
+
+              .post1 p {
+                padding: 0px 10px;
+              }
+
+              /************John Doe Post 2****************/
+
+              .post2 {
+                position: absolute;
+                width: 1000px;
+                height: 250px;
+                margin:auto;
+                top: 515px;
+                left: 0;
+                right: 0;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                
+              }
+
+              .post2 .profile-pic {
+                padding: 20px 20px;
+        
+              }
+
+              .post2 .author{
+                position: absolute;
+                padding: 35px 10px;
+                font-size: 26px;
+              }
+
+              .post2 .time-since-published {
+                position: absolute;
+                right: 20px;
+                top: 35px;
+                font-size: small;
+                color: #b8b8b8;
+                white-space: nowrap;
+              }
+
+              .post2 p {
+                padding: 0px 10px;
+              }
+
+              /************Friend Request****************/
+
+              .friend-request {
+                
+                width: 100px;
+                height: 220px;
+                display: block;
+                text-align: center;
+              }
+
+              .friend-request-buttons a{
+                text-decoration: none;
+                text-align: center;
+                border: none;
+                padding: 1px 8px;
+                
+                
+              }
+
+              .friend-request-buttons a:hover {
+                background-color: #888b8e;
+                color: black;
+              }
+              
+
+              .accept-button {
+                background-color: #93ce95;
+                color: #fffdfd;
+                
+              }
+
+              .reject-button {
+                background-color: #f88d86;
+                color: #fffdfd;
+              }
+
+
+              #fr1 {
+                position: absolute;
+                top: 85px;
+                right: 190px;
+              }
+
+              #fr2 {
+                position:absolute;
+                top: 325px;
+                right: 190px;
+              }
+
+              #fr1 img {
+                border-radius: 0px;
+                width: 70px;
+              }
+
+
+              #fr2 img {
+                border-radius: 0px;
+                width: 70px
+              }
+
+    
+
+              /******Ads********/
+
+              .placeholder {
+                margin-left: 10px;
+                margin-right: 80%;
+                position: absolute;
+                text-align: center;
+                background-color: white;
+                
+
+              }
+
+
+              /***************Nab Bar ************************/
+              nav {
+                background-color:#4a627a;
+                list-style-type: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 50px;
+            }
+            
+            span a{
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                padding: 17px 25px;
+            }
+            
+            span a:hover{
+                background-color: white;      
+                color: black;
+                display: inline;     
+                list-style-type: none;
+                padding: 17px 25px;
+            }
+            
+            footer {
+                background-color:#4a627a;
+                color: white;
+                width: 100%;
+                margin-top: 390px;
+                left: 0;
+                padding: 10px 0px;
+                text-indent: 10px;;
+                position: absolute;
+              
+            }
+            
+            .active {
+                background-color: #4a535c;
+            }
+            
+            .active:hover {
+                background-color: lightgrey;
+            }
+            
+            .rightmargin::before {
+                margin-right: 12px;
+            }
+            
+            .rightmost {
+                float: right;
+            }
+            
+            .profile-padding {
+                float: right;
+                padding: 14px 25px;
+            }
+            
+            .profile-padding:hover {
+                float: right;
+                padding: 14px 25px;
+            }
+            
+            .profileimg {
+                display: block;
+                position: relative;
+                width: 23px;
+                border-radius: 50%;
+            }
+            
+            .dpbadge {
+                color: white;
+                background-color: #4CAF50;
+                font-size: 12px;
+                display: inline-block;
+                padding-left: 5px;
+                padding-right: 5px;
+                text-align: center;
+                border-radius: 50%;
+            }
+            
+            .dpbutton {
+                border: none;
+                display: inline-block;
+                padding: 7px 15px;
+                text-decoration: none;
+                color: inherit;
+                background-color: inherit;
+                text-align: center;
+            }
+            
+            .dphover {
+                position: absolute;
+                color: white;
+                padding: 10px 10px;
+                display: inline-block;
+            }
+            
+            .dphover:hover {
+                background-color: lightgrey;      
+                position: absolute;
+                color: black;
+                padding: 10px 10px;
+                display: inline-block;
+            }
+            
+            .dpbar {
+                color: black;
+                display: none;
+                padding: 10px 10px;
+                min-width: 220px;    
+            }
+            
+            .dpbar:hover {
+                display: block;
+                color: black;
+                background-color: lightgrey;
+            }
+            
+            .dpcontent {
+                position: absolute;
+                display: inline-block;
+            }
+            
+            .dphover:hover .dpcontent {
+                display:block;
+                color: #000;
+                background-color: #fff;
+                font-size: 14px;
+                text-align: left;
+                top: 50px;
+                left: 0;
+                box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.3);
+            }
+            
+            .dphover:hover .dpbar {
+                display: block;
+            }
+
+
+
+
+
+              
+
+
+
+
+
+        </style>
     </head>
 
     <body>
         <header>
             <nav>
                 <span>
-                    <a href="#home" class="fa fa-home" title="Home Page"></a>
+                    <a href="#home" class="fa fa-home rightmargin active" title="Home Page">Logo</a>
                     <a href="#news" class="fa fa-globe" title="News"></a>
+                    <a href="#accountsettings" class="fa fa-user" title="Account Settings"></a>
                     <a href="#messages" class="fa fa-envelope" title="Messages"></a>
-                </span>
-                <span>
-                    <a href="#profile" id="profile-button">
-                        <img src="images/avatar6.png" title="Profile">
+                    
+                    <div class="dphover">
+                        <button class="dpbutton" title="Notifications">
+                            <i class="fa fa-bell"></i>
+                            <span class="dpbadge rightmost">3</span>
+                            <div class="dpcontent">
+                                <i class="dpbar">One new friend request</i>
+                                <i class="dpbar">John Dow posted on your wall</i>
+                                <i class="dpbar">Jane likes your post</i>
+                            </div>
+                        </button>
+                    </div>
+                    <a class="rightmost profile-padding" href="#profile" title="My Account">
+                        <img class="profileimg" src="images/avatar6.png" alt="Profile">
                     </a>
-                </span>
+                </span>    
             </nav>
         </header>
-
         <main>
             <div id="gridholder">
                 <!-- leftmost column -->
@@ -34,8 +504,8 @@
                     <!-- profile -->
                     <article class="profile">
                         <section>
-                            <h2>Jane Doe</h2>
-                            <h2><img src="images/avatar6.png"></h2>
+                            <h2 id="jane-doe">Jane Doe</h2>
+                            <h2><img src="images/avatar6.png" class="profile-pic"></h2>
                         </section>
                         <section class="profile-points">
                             <ul>
@@ -62,20 +532,20 @@
                         <section>
                             <h3>Interests</h3>
                                 <ul>
-                                    <li class="tag major">News</li>
-                                    <li class="tag major">W3Schools</li>
-                                    <li class="tag major">Labels</li>
-                                    <li class="tag major">Games</li>
-                                    <li class="tag minor">Food</li>
-                                    <li class="tag minor">Design</li>
-                                    <li class="tag tangential">Art</li>
+                                    <li class="tag-major">News</li>
+                                    <li class="tag-major">W3Schools</li>
+                                    <li class="tag-major">Labels</li>
+                                    <li class="tag-major">Games</li>
+                                    <li class="tag-minor">Food</li>
+                                    <li class="tag-minor">Design</li>
+                                    <li class="tag-tangential">Art</li>
                                 </ul>
                         </section>
                     </article>
                 </div>
 
                 <!-- middle column -->
-                <div class="column posts">
+                <div class="column-posts">
 
                     <!-- add a post -->
                     <article class="new-post">
@@ -89,9 +559,9 @@
                     </article>
 
                     <!-- existing post#1 -->
-                    <article class="post">
+                    <article class="post1">
                         <section>
-                            <span class="avatar"><img src="images/avatar3.png"></span>
+                            <span class="avatar"><img src="images/avatar3.png" class="profile-pic"></span>
                             <span class="author">John Doe</span>
                             <span class="time-since-published">1 min</span>
                         </section>
@@ -107,9 +577,9 @@
                     </article>
 
                     <!-- existing post#2 -->
-                    <article class="post">
+                    <article class="post2">
                         <section>
-                            <span class="avatar"><img src="images/avatar3.png"></span>
+                            <span class="avatar"><img src="images/avatar3.png" class="profile-pic"></span>
                             <span class="author">John Doe</span>
                             <span class="time-since-published">20 min</span>
                         </section>
@@ -129,20 +599,20 @@
                 <div class="column friends">
 
                     <!-- friend request -->
-                    <article class="friend-request">
+                    <article class="friend-request" id="fr1">
                         <h3>Friend Request</h3>
-                        <img src="images/avatar2.png">
+                        <img src="images/avatar2.png" class="profile-pic">
                         <h4>Fred Jones</h4>
                         <div class="friend-request-buttons">
                             <a href="#" class="accept-button">YES</a>
                             <a href="#" class="reject-button">NO</a>
-                        </div>
+                           </div>
                     </article>
 
                     <!-- friend request -->
-                    <article class="friend-request">
+                    <article class="friend-request" id="fr2">
                         <h3>Friend Request</h3>
-                        <img src="images/avatar5.png">
+                        <img src="images/avatar5.png" class="profile-pic">
                         <h4>Tom Smith</h4>
                         <div class="friend-request-buttons">
                             <a href="#" class="accept-button">YES</a>
