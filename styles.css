@@ -1,0 +1,237 @@
+/*Header, Main, Footer*/
+
+header {
+    position: fixed;
+    top: 0;
+    min-height: 30px;
+    width: 100%;
+    z-index: 10;
+}
+
+nav, footer {
+    background-color: darkslategrey;
+    color: white;
+    padding: 2px;
+}
+
+.fa {
+    color: white;
+    padding: 3px;
+    margin: 2px 4px;
+    text-decoration: none;
+}
+
+#profile-button {
+    float: right;
+    position: relative;
+    top: -12px;
+}
+
+#profile-button img {
+    border-radius: 50%;
+    scale: .45;
+}
+
+main {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 30px;
+}
+
+footer {
+    height: 30px;
+    width: 100%;
+    z-index: 9;
+}
+
+/*General Stuff*/
+
+#gridholder {
+    column-count: 3;
+    display: flex;
+}
+
+#gridholder > :nth-child(1), #gridholder > :nth-child(3) {
+    width: 25%;
+}
+
+#gridholder > :nth-child(2)  {
+    width: 50%;
+}
+
+div.column > * {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    break-inside: avoid-column;
+    padding: 8px;
+    margin: 6px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: coral;
+}
+
+img {
+    max-width: 50px;
+}
+
+/*Column 1 stuff*/
+
+.profile section h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.profile img {
+    scale: 2;
+}
+
+article.highlights {
+    padding: 0;
+}
+
+.highlights ul {
+    background-color: slategray;
+    padding: 3px;
+}
+
+.highlights ul li {
+    padding: 3px;
+}
+
+.highlights ul, .interests ul {
+    list-style: none;
+}
+
+.major {
+    display: inline-flex;
+    background-color: darkslategray;
+    color: white;
+    padding: 2px 6px;
+    margin: 2px;
+}
+
+.minor {
+    display: inline-flex;
+    background-color: grey;
+    color: white;
+    padding: 2px 6px;
+    margin: 2px;
+}
+
+.tangential {
+    display: inline-flex;
+    background-color: gainsboro;
+    color: black;
+    padding: 2px 6px;
+    margin: 2px;
+}
+
+/*Column 2 stuff*/
+
+textarea {
+    resize: vertical;
+    position: relative;
+    left: -3px;
+    min-height: 40px;
+}
+
+.post section {
+    position: relative;
+}
+
+.post section span:nth-last-child(1) {
+    float: right;
+}
+
+.author {
+    font-size: 30px;
+}
+
+.time-since-published {
+    color: darkgrey;
+}
+
+.post-buttons > * {
+    background-color: darkslategray;
+    color: white;
+}
+
+.post-buttons > button:hover {
+    color: coral;
+}
+
+.post section span {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.post span.avatar img {
+    border-radius: 50%;
+}
+
+.post .post-buttons button:first-child:before {
+    font-family: FontAwesome;
+    content: "\f164";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+}
+
+.post .post-buttons button:last-child:before {
+    font-family: FontAwesome;
+    content: "\f075";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+}
+
+/*Column 3 stuff*/
+
+.friend-request img {
+    display: block;
+    margin: auto;
+}
+
+.friend-request * {
+    align-self: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.friend-request-buttons > a {
+    display: inline-block;
+    column-width: 100px;
+    height: 25px;
+}
+
+.accept-button {
+    background-color: green;
+}
+
+.accept-button:hover {
+    color: black;
+}
+
+.reject-button {
+    background-color: red;
+}
+
+.reject-button:hover {
+    color: black;
+}
+
+.placeholder {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
