@@ -87,6 +87,20 @@ nav a:active, nav a:focus {
 	height: 100%;
 }
 
+
+.interests ul {
+	list-style: none;
+	padding: 0;
+}
+
+.interests li {
+	display: inline-block;
+	margin: 5px;
+	background-color: #006494;
+	color: #E8F1F2;
+	padding: 5px;
+}
+
 .column {
 	padding: 10px;
 }
