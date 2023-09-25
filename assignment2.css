@@ -101,7 +101,22 @@ main {
     border-radius : 5px;
     box-shadow: 0 2px 5px 0;
     padding : 10px;
+    box-sizing: border-box;
 }
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    resize: none;
+    min-height: 55px;
+}
+
+
 
 .post {
     border-radius : 5px;
