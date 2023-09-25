@@ -60,7 +60,7 @@ main {
 
 main > div {
     display: grid;
-    grid-template-columns: 40% 60% 20%;
+    grid-template-columns: 20% 60% 20%; /* You changed the first one into 40%, but that caused the contents to overlap causing the need to scroll sideways so I changed it back */
 }
 
 article {
@@ -84,14 +84,38 @@ h2 > img {
     text-align: center;
 }
 
-.highlights > .profile-points {
-    display: block;
-    width: 100%;
-    text-decoration: none;
-    color:black;
+ul.about-me {
+    list-style-type: none;
 }
 
-ul.foo { /* NOT WORKING PROPERLY */
+ul.about-me li {
+    padding: 5px;
+}
+
+ul.my-tabs {
+    list-style: none;
+}
+
+article.highlights {
+    background-color: lightsteelblue;
+    border: 1px solid lightsteelblue;
+}
+
+ul.my-tabs li a {
+    display: block;
+    text-decoration: none;
+    color:black;
+    background-color: lightsteelblue;
+    padding: 8px;
+}
+
+ul.my-tabs li a:hover {
+    background-color: lime;
+    color: white;
+    text-decoration: none;
+}
+
+ul.foo {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -131,6 +155,10 @@ ul.foo { /* NOT WORKING PROPERLY */
     color:darkgrey;
     font-size: smaller;
     margin-right: 1%;
+}
+
+article.post section:nth-child(2) {
+    border-top: 1px solid lightslategray;
 }
 
 button {
