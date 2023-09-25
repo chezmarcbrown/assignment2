@@ -7,6 +7,7 @@ body {
     border : 0;
     margin : 0;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic';
 }
 
 header {
@@ -54,16 +55,20 @@ main {
 
 .personal, .friends {
     text-align: center;
-
 }
 
-.profile h2 {
+.profile {
+    background-color: aquamarine;
+}
 
+.profile-points li {
+    text-align: left;
 }
 
 .interests {
     text-align: left;
     padding-left: 10px;
+    background-color: aliceblue;
 }
 
 /* TAGS */
@@ -71,7 +76,7 @@ main {
 li.tag {
     display: inline-block;
     color: white;
-    background-color: lightsteelblue;
+    background-color: lightblue;
     padding-left: 2px;
     padding-right: 2px;
     margin-bottom: 2px;
@@ -89,6 +94,47 @@ li.tangential {
     background-color: paleturquoise;
     color: black;
 }
+
+/* HIGHLIGHTS */
+
+article.highlights {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.highlights ul {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.highlights .profile-points li {
+    list-style: none;
+    text-align: center;
+    display: block;
+    background-color: mediumaquamarine;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+.highlights .profile-points a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.highlights .profile-points a:hover {
+    background-color: lightskyblue;
+}
+
+/* POSTS */
 
 .posts {
     margin-left : 20px;
@@ -112,18 +158,41 @@ li.tangential {
 
 .friend-request-buttons > a {
     display: inline-block;
-    background-color: darkcyan;
     font-size: 24px;
+    text-decoration: none;
     padding-left: 12px;
     padding-right: 12px;
     padding-top: 3px;
     padding-bottom: 3px;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
 }
-/*
+
+.friend-request a:hover {
+    border: solid;
+    border-color: white;
+    border-width: 3px;
+}
+
 .accept-button {
-    background-color: limegreen;
+    background-color: green;
     color: white;
-}*/
+}
+
+.reject-button {
+    background-color: darkred;
+    color: white;
+}
+
+.accept-button:hover {
+    background-color: yellowgreen;
+}
+
+.reject-button:hover {
+    background-color: indianred;
+
+}
 
 img {
     width : 50px;
