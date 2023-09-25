@@ -1,0 +1,239 @@
+main {
+    padding-top: 50px;
+ }
+ nav {
+    border: 1px;
+    background-color: rgb(68, 62, 62);/*Choose background color*/
+    position: fixed;/*Make it where it moves while scrolling*/
+    margin-right: 10px;
+    top: 0;
+    width: 100%;
+    max-height: 40px;
+    z-index: 1; /* No overlay on top of other text*/
+    font-size: 18px; /* nav icons size */
+ }
+ nav > span > a {/*Icons in the nav bar*/
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;/* remove line under icon*/
+    
+ }
+ #profile-button{ /*Needs to be on the right side of nav bar*/
+    padding: 0px;
+    display: block;
+    float: right;
+    width: 8%;
+    
+ }
+ a:hover{
+    background-color: rgb(134, 130, 130);/*highlights items that you hover(can change color)*/
+ }
+ a:active{
+    background-color: #888d7e89;/*highlights nav icons once you click on them */
+ }
+ footer {
+    background-color: rgb(68, 62, 62);/*choose background color(same color as nav bar)*/
+    color: white; /* white color for the text */
+    margin-right: 10px;
+    top: 0;
+    width: 100%;
+    max-height: 40px;
+    font-size: 15px;
+ }
+ #profile-button img{
+    margin-top: 3%;
+    width: 30px;
+    padding-bottom: 2px;
+ }
+ img {
+    width: 90px;
+    border-radius: 50%;
+ }
+ div > article > img{
+    width: 40px;
+    border-radius: 0%;
+ }
+ article {
+    border: 1px solid black;/*Need border around each article*/
+ }
+ .highlights {/*Section needs to have a grey background*/
+    background-color: darkgrey;
+    /*remove bullet points*/
+ }
+ .post-buttons > button{
+    background-color: darkgrey;
+    /* more changes to buttons */
+ }
+ .highlights >  .profile-points > ul > li{
+    list-style-type: none;
+    display: list-item;
+ }
+.profile-points a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+ article > section > textarea{
+    text-align: left;
+ }
+ section > .post-buttons > button{
+    text-align: left;
+ }
+ .new-post{
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.179);
+    transition: 0.3s;
+    margin-bottom: 15px;
+    height: 20%;
+ }
+ .post{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.482);
+    transition: 0.3s;
+    margin-bottom: 15px;
+ }
+ #gridholder {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    gap: 10px;
+ }
+ .friend-request {
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.431);
+    transition: 0.3s;
+    margin-bottom: 15px;
+    /*width: 70%;*/
+    height: 30%;
+ }
+ .accept-button {
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    display: inline-block;
+    /*border around*/
+    /*padding from text to border*/
+ }
+ .reject-button {
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    display: inline-block;
+    /*border around*/
+    /*padding from text to border*/
+ }
+ div {
+    padding: 5px;
+ }
+ article {
+    /* padding between articles needed */
+    padding: 5px;
+ }
+ .profile{
+    text-align: center;
+    list-style-type: none;
+    font-style: normal;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    margin-bottom: 15px;
+    height: 50%;
+ }
+ .profile > section > h2 > img {
+    width: 40%;
+    border-radius: 0%;
+ }
+ .profile:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ }
+ .profile-points{
+    text-align: left;
+    font-style: normal;
+    padding: 2px 16px;
+    /* add lines */
+    
+ }
+ 
+ .interests {
+    /* format this */
+    font-style: normal;
+    text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    /*height: 25%;*/
+ }
+ .interests:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ }
+ .tag{
+    list-style-type: none;
+    font-size: 12px;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-block: 5px;
+ }
+ .major{
+    color: #fff;
+    background-color: #0c0c0c;
+ }
+ .minor{
+    color: #fff;
+    background-color: #717575;
+ }
+ .tangential{
+    color: black;
+    background-color: #c9cfd2;
+ }
+ .column-friends {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+ }
+ 
+ .highlights {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    margin-bottom: 15px;
+    
+ }
+ .highlights:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ }
+ .placeholder{
+    text-align: center;
+    font-style: normal;
+    background-color: #f0d9b9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.498), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    margin-bottom: 15px;
+    height: 25%;
+ }
+ .column{
+    
+ }
+ textarea {
+    margin: 5px;
+    width: 300px;
+ }
+ .friend-request-buttons {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20%;
+ }
+ 
+ .friend-request-buttons-child {
+    -webkit-box-flex: 1 1 auto;
+    -moz-box-flex:  1 1 auto;
+    -webkit-flex:  1 1 auto;
+    -ms-flex:  1 1 auto;
+    flex:  1 1 auto;
+ }
+.time-since-published {
+   float: right;
+}
