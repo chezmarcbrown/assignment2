@@ -93,6 +93,14 @@ nav a:active, nav a:focus {
 	padding: 0;
 }
 
+.interests ul li:nth-child(5), .interests ul li:nth-child(6) {
+	background-color: #1B98E0;
+}
+
+.interests ul li:nth-child(7){
+	background-color: #d3aaf0;
+}
+
 .interests li {
 	display: inline-block;
 	margin: 5px;
@@ -133,6 +141,7 @@ nav a:active, nav a:focus {
 
 .highlights li:hover {
 	background-color: #1B98E0;
+	cursor: pointer;
 }
 
 a:visited {
@@ -172,7 +181,8 @@ button {
 }
 
 button:hover {
-	background-color:#1B98E0
+	background-color:#1B98E0;
+	cursor: pointer;
 }
 
 textarea {
@@ -188,9 +198,24 @@ textarea {
 	width: 40%;
 }
 
+.avatar {
+	display: inline-block;
+	width: 10%;
+	overflow: hidden;
+	height: auto;
+}
+
 .avatar img {
-	width: 12%;
-	border-radius: 50%;;
+	border-radius: 50%;
+	width: 100%;
+  	height: auto;
+}
+
+.post section {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	position: relative;
 }
 
 .friend-request img {
@@ -201,6 +226,21 @@ textarea {
 	text-align: center;
 	margin-left: 0;
 	margin-right: 0;
+}
+
+.author {
+	justify-content: center;
+	position: relative;
+	top: 50%;
+	margin: 0px 5px;
+}
+
+.time-since-published {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: small;
+	color: #1B98E0
 }
 
 /* Both of the following style the buttons*/
@@ -222,8 +262,13 @@ textarea {
 	text-align: center;
 }
 
+.accept-button:hover, .reject-button:hover {
+	cursor: pointer;
+	background-color: #006494;
+}
+
 /* Adds a line break after profile images*/
-.profile section:first-child::after, .post section:first-child::after {
+.profile section:first-child::after {
 	content: "";
 	display: block;
 	width: 100%;
