@@ -70,6 +70,10 @@ main {
     list-style-type: none;
     display: list-item;
  }
+.profile-points a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
  article > section > textarea{
     text-align: left;
  }
