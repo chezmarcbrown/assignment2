@@ -13,10 +13,6 @@ body {
     justify-content: flex-start;
 }
 
-img {
-    width : 50px;
-}
-
 header {
     top : 0;
     position : fixed;
@@ -71,35 +67,110 @@ main {
     grid-template-columns: 25% 58% 17%;
 }
 
-.column {
+.column article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0 2px 5px 0;
     vertical-align: top;
     box-sizing: inherit;
+    display: block;
+}
+
+.personal, .friends {
+    text-align: center;
+}
+
+.profile {
+    background-color: aquamarine;
+}
+
+.profile-points li {
+    text-align: left;
+}
+
+.interests {
+    text-align: left;
+    padding-left: 10px;
+    background-color: aliceblue;
+}
+
+
+/* TAGS */
+
+li.tag {
     display: inline-block;
+    color: white;
+    background-color: lightblue;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 2px;
 }
 
-.personal {
-    box-shadow: 0 2px 5px 0;
+li.major {
+    background-color: darkcyan;
 }
 
-.friends{
-    box-shadow: 0 2px 5px 0;
+li.minor {
+    background-color: darkturquoise;
 }
 
+li.tangential {
+    background-color: paleturquoise;
+    color: black;
+}
 
+/* HIGHLIGHTS */
+
+article.highlights {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.highlights ul {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.highlights .profile-points li {
+    list-style: none;
+    text-align: center;
+    display: block;
+    background-color: mediumaquamarine;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+.highlights .profile-points a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.highlights .profile-points a:hover {
+    background-color: lightskyblue;
+}
 
 
 .posts{
     border-radius : 5px;
     display: grid;
     grid-template-rows:auto auto;
-    grid-gap: 20px;
     margin-left : 20px;
     margin-right : 20px;
 }
 
 .new-post {
     border-radius : 5px;
-    box-shadow: 0 2px 5px 0;
     padding : 10px;
     box-sizing: border-box;
 }
@@ -117,12 +188,12 @@ textarea {
 }
 
 
-
 .post {
     border-radius : 5px;
     box-shadow: 0 2px 5px 0;
     padding : 10px;
 }
+
 
 .avatar {
     display:inline-block;
@@ -166,6 +237,79 @@ section > p {
     color:#ffffff;
     padding: 5px 10px;
     font-size: 14px;
+}
+
+/* FRIEND REQUESTS */
+
+.friend-request {
+    background-color: lightseagreen;
+}
+
+.friend-request h3, .friend-request h4 {
+    background-color: white;
+    display: inline-block;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.friend-request-buttons > a {
+    display: inline-block;
+    font-size: 24px;
+    text-decoration: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+.friend-request a:hover {
+    border: solid;
+    border-color: white;
+    border-width: 3px;
+}
+
+.accept-button {
+    background-color: green;
+    color: white;
+}
+
+.reject-button {
+    background-color: darkred;
+    color: white;
+}
+
+.accept-button:hover {
+    background-color: yellowgreen;
+}
+
+.reject-button:hover {
+    background-color: indianred;
+
+}
+
+img {
+    width : 50px;
+}
+
+.profile img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.friend-request img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
 
 footer{
