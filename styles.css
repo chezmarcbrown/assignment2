@@ -51,18 +51,26 @@ nav {
     width: 100%;
     z-index: 100;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
 }
+
+nav img {
+	border-radius: 50%;
+	padding: 5px 10px 5px 5px;
+	float: right;
+}
+
 nav a {
     text-decoration: none;
     color: white;
     margin: 0 10px;
+	padding: 0px 10px;
 }
 
 nav a:hover {
     transition: 0.25s;
-    color: blue;
+    color: #1B98E0;
 }
 nav a:active, nav a:focus {
     color: #fff;
