@@ -1,0 +1,158 @@
+body {
+    background-color: rgba(118, 75, 131, 0.349);
+    margin: 8vh 1vw;
+}
+
+
+/*---header and footer---*/
+header,
+footer {
+    background-color: rgba(94, 39, 117, 1);
+    width: 100%;
+    position: fixed;
+    left: 0;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+    height: 30px;
+}
+
+footer p {
+    padding: 2px;
+    margin: 2px;
+    color: rgba(255, 255, 255, 0.678);
+}
+
+.fa {
+    display: inline-block;
+    width: auto;
+    color: rgba(255, 255, 255, 0.678);
+    padding: 12px 40px;
+    line-height: 1.5;
+}
+
+.fa:hover {
+    background-color: rgba(211, 184, 219, 0.603);
+}
+
+#profile-button img {
+    float: right;
+    width: 35px;
+    margin: 4px;
+    padding: 2px;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+
+#gridholder {
+    display: grid;
+    grid-template-columns: 0.75fr 2fr 0.75fr;
+    gap: 1vw;
+
+}
+
+/*left column */
+.profile,
+.highlights,
+.interests {
+    box-shadow: 2px 6px 15px 2px rgba(93, 39, 117, 0.705);
+    border-radius: 5%;
+    background-color: whitesmoke;
+    text-align: center;
+    line-height: 2;
+    /* border: 1px solid; */
+    margin-bottom: 1vh;
+    padding: 1vh 1vw;
+
+}
+
+.profile-points li {
+    list-style-type: none;
+    text-align: start;
+
+}
+
+.profile img {
+    width: 75%;
+    border-radius: 10%;
+    border: 1px solid;
+}
+
+.profile li {
+    list-style-type: square;
+
+}
+
+/*right column*/
+.friend-request,
+.placeholder {
+    padding: 5% 0px;
+    background-color: white;
+    box-shadow: 2px 6px 15px 2px rgba(93, 39, 117, 0.705);
+    margin-bottom: 1vh;
+    border-radius: 5%;
+    padding: 1vh 1vw;
+    text-align: center;
+}
+
+.friend-request>img {
+    width: 40%;
+    border: 2px solid grey
+}
+
+.friend-request-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.accept-button,
+.reject-button {
+    border: 1px solid;
+    width: 50%;
+    text-align: center;
+    color: black;
+    margin: 5px 0px;
+    padding: 5px
+}
+
+.reject-button {
+    background-color: rgba(128, 24, 24, 0.63);
+}
+
+.accept-button {
+    background-color: rgba(31, 110, 31, 0.781);
+}
+
+/*center column*/
+.post,
+.new-post {
+    box-shadow: 2px 6px 15px 2px rgba(93, 39, 117, 0.705);
+    padding: 1vh 1vw;
+    background-color: white;
+    margin-bottom: 1.5vh;
+}
+
+.avatar>img {
+    border-radius: 50%;
+    width: 15%;
+    padding: 2px;
+    box-shadow: 8px;
+
+}
+
+.author {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.time-since-published {
+    float: right;
+    color: rgb(205, 149, 216);
+    font-size: small
+}
